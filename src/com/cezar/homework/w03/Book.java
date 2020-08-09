@@ -1,7 +1,9 @@
 package com.cezar.homework.w03;
 
 public class Book {
-
+    /**
+     * Define Book class which stores information about nr of pages and book title
+     */
     private String bookName;
     private int noOfPages = 0;
 
@@ -23,7 +25,9 @@ public class Book {
 }
 
 class Novel extends Book {
-
+    /**
+     * Define the Novel class which inherits Book class
+     */
     private String novelType;
 
     public String getNovelType(){
@@ -42,7 +46,9 @@ class Novel extends Book {
 }
 
 class Album extends Book{
-
+    /**
+     * Define Album class which inherits Book class
+     */
     private String paperQuality;
 
     public String getPaperQuality() {
@@ -56,6 +62,6 @@ class Album extends Book{
         /**
          * This method sets the paper quality of the art album
          */
-
+        this.paperQuality = quality;
     }
 }
