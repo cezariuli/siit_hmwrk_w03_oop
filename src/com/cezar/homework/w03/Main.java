@@ -11,13 +11,35 @@
 
 package com.cezar.homework.w03;
 
+import java.util.ArrayList;
+
 public class Main {
+
+
 
     public static void main(String[] args) {
         /**
          * main method of the Main class
          */
         // write your code here
+        ArrayList<Book> libCatalog;
+        libCatalog = new ArrayList<Book>();
 
+        Novel book1 = new Novel();
+        book1.setBookName("Dune");
+        book1.setNovelType("Science Fiction");
+        book1.setNoOfPages(661);
+
+        Album book2 = new Album();
+        book2.setBookName("National Geographic Traveler: Vietnam");
+        book2.setNoOfPages(271);
+        book2.setPaperQuality("Very good");
+
+        System.out.println(book1.getBookName());
+        libCatalog.add(book1);
+        libCatalog.add(book2);
+        System.out.println(libCatalog.size());
+
+        //list the books from the catalog;
     }
 }
